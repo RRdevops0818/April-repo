@@ -1,0 +1,266 @@
+What is Cloud?
+I have an application, but where to run this application.
+The application will deploy in the server or run in the run but in which server we will deploy or run for example if i have 2 types of servers 
+One is On Premises servers which is physical servers
+Drawbacks --> High Maintenance, Needs Physical space, Hire Technical team, 24/7 technical Team availability, Scaling (No of servers) is not an easy  task
+And the other one is Cloud Platform
+
+
+What we required to run a application
+Servers
+Storage
+Database
+Networking IP addresses
+Other Cloud Services
+
+What is cloud Computing.
+Cloud Computing is the delivery of computing services like servers, storage, Database, Networking and other software through internet.
+
+Types of Cloud Computing
+
+Cloud computing
+
+Service Model 
+
+SAAS  -- Software as a service -- 100% everything managed by infra , nothing to do as user.
+
+PAAS --  Platform as a service -- 75% is managed by Infra and 20% will be managed by user (application running and data).
+IAAS --  Infra as a service -- 50% is managed by Infra (aws) and 50% will be managed by user (application running, updates, data maintain.
+
+Deployment model
+
+Private cloud -- A Private cloud is dedicated exclusively to one organization. The infrastructure can be on-premises or hosted by third party provider, but the resources are not shared with anyone else.
+
+Public cloud 
+
+Hybrid cloud -- Combines both public and private clouds, allowing data and application to move between them.
+
+Community Cloud -- It allows multiple organization to use same cloud to store their data
+
+what are the cloud providers?
+AWS, Microsoft Azure, IBM, GCP etc
+What is AWS?
+
+AWS is abbreviation as Amazon Web Services.
+It is the best cloud provider
+It is the  first among all the clouds
+if offers multiple services on different domains
+It is the combination of SAAS,PAAS,IAAS
+It is one of the most popular cloud computing platform. Now a days most of the companies are using this cloud because of numerous that allow them to store their data easily without the need of a physical space.
+
+AWS provides a wide range of cloud computing services that can be used to build and run application.
+It can offers more than 200+ services on multiple domains
+AWS covers about 31 geographics regions around the world.
+AWS provides a wide range of security features ad compliance certifications that help customers to secure their applications can data in the cloud.
+The AWS cloud spans 99 availability zones.
+It allows users to select different operation systems, databases and languages.
+It follows the pay as yo go, Model.
+
+Advantages of AWS.
+
+Automated multi-Region backups : If we lost our data in one region we will retrieve our data from another location.
+
+Streamlined Disaster recovery : If in case there is wars, still our data is secure.
+
+Security : Best security as compared to others.
+
+Pay as you GO Pricing
+
+Simple automated scheduling : some of our work is scheduling if we are away.
+
+Customization : It provides any kind of systems OS examples : Linux, Windows and it can allows kind of programming language to run. Flexibles 
+
+Third - Party APIS (Application programming interface) : We can integrate with any third party tool with AWS it open and highly secure
+
+Speed and Agility : In AWS we can launch a server within 30 seconds.
+
+Excellent customer support.
+
+
+AWS account creation
+
+Amazon EC2 -- Elastic Compute Cloud - to create a service in the AWS we used it.
+
+What is Server?
+Servers are the computers that run services to serve the needs of the user (to provide services to other computers) These server are used for various purposes like hosting websites, applications, storing and managing data.
+Servers is nothing but a systems where we store our data.
+It can fulfill the customer needs.
+
+Types of servers
+Web server : Apache, IIS, GWS google web server
+Application server : Apache tomcat, IBM WebSphere
+Email server
+FTP server
+SFTP server etc
+
+For a server we have Operating system
+Hardware ( CPU, RAM )
+Security
+Network
+Storage
+
+To run a application in the server, it had all requirements in the server level
+
+
+To create a server -- we need 7 steps to create
+
+step-1 : Name and Tags
+
+Tags : To identify servers
+Name : Web - server
+Client : Swiggy
+Environment : Production
+
+step-2 : Amazon Machine image
+
+Operating system
+Software's etc
+
+step-3 : Instance type
+
+CPU & RAM (configuration)
+
+Default:T2:Micro - 1-CPU&1-GB RAM
+Max:u-24tb1.metal - 448-cups & 24,576-GB RAM
+
+Step-4: Key-Pair
+
+For safe & secure login to server
+1.Public key : store by AWS
+2.Private key : store by User
+Private key : (PEM & PPK)
+
+
+Step-5: Network & Security
+VPC : Virtual Private cloud
+1. Used to isolate servers
+2. Responsible for Network
+3. Creates our own Network
+
+Step-6 : Firewall
+
+Security groups - a group of rules. who are going to access our server
+Inbound rules is required, outbound rules is not required.
+For Linux 22ssh (secure shell/socket host) then only we can access the server
+for windows 3389 port number
+for webserver : 80 port number then only our request is sent to the server
+
+Step-7 : Storage 
+
+EBS : Elastic block store
+to provide storage for the server
+Default:8GB Max up to 16 TB
+
+
+Creating a server(instance) by using a EC2(Elastic compute cloud) service creating a virtual instance - 7 steps required to build
+
+
+Server (instance) -- There is a 2 ways to connect the instance
+One is Console(AWS Account) 
+Second one is Terminal (Putty, Mobaxtrem, CMD, vs code, git bash etc) terminal is used to connect the server through internet.
+
+if we have an application -- Public IP it allows to access the application through the internet
+
+To Run application --> access through internet --> public IP
+used to connect the instance through internet --> public IP required
+
+Private IP is used to access the application within the server through internet is not possible
+
+
+Key-Pair -- 1.PEM : Privacy Enhanced Mail
+2.PPK:Putty Private Key
+
+Its not possible to connect with PEM key in Putty terminal
+
+Server -- Public IP, Key-Pair, Username ---- to clear the traffic for the terminal 22 port is used  ( Inbound rule ) give to security group( is handle the traffic )
+
+
+Frontend -- Webserver -- httpd(apache), Nginx, IIS -- deploy chyadaniki
+backend --  application server -- tomcat, jboss
+database -- db servers -- MySQL, mongodb
+
+webserver installation -- httpd (port 80) to access the application 
+
+command -- sudo yum install httpd -y
+
+
+Linux -- OS (Operating system) is fast and secure
+
+Types of commands 
+1. System commands
+2. Hardware commands
+3. File commands
+4. search commands
+5. Software installation commands
+6. User/group commands
+7. Permissions commands
+8. Networking commands
+9. Editor commands
+
+Sudo su - /sudo -i --> to switch as root user
+exit or ctrl+d
+
+system commands 
+uname     -- which version of OS is used either Linux or windows or mac OS
+uname -r  -- for kernel version update 
+uname -a  -- to know all the info/details of the OS like OS, Version, hostname
+uptime    -- to know the server from how long the server is running
+uptime -p -- for the system uptime
+ifconfig
+ip route
+ip addr -- to know the Private IP
+hostnamectl set-hostname "Rajesh-server" to change the hostname
+timedatectl -- to know the local time, universal time, time zone
+timedatectl set-timezone Asia/Kolkata -- change the time to ISD or other 
+locations
+whoami -- to know in which user we are in
+date +"%d" -- exact date
+date +"%m" -- exact month
+date +"%y" -- exact year
+date +"%A" -- print the day as Monday, Tuesday
+date +"%B" -- print the month name 
+date +"%H" -- print the hours
+date +"%M" -- print the minute's
+date +"%S" -- print the seconds
+date +"%F" -- Print the Year-month-date
+date +"%D" -- print the month-date-year
+
+ps -- to   -- know the processor running the OS
+kill -9 PID(processor id)   -- To kill the unwanted processors 
+
+
+Hardware commands
+
+lscpu or cat /proc/cpuinfo -- to fetch all the cpu information
+top   --- to know the CPU utilization to quit - give q back to root user
+free -h -- to know the RAM information
+free -- to know the RAM info as kilobytes
+free -m -- info as megabytes
+
+Storage
+df -h -- to know the storage details
+
+fdisk -l -- to know the volume details
+
+
+
+
+
+
+git commit --amend --no-edit -- if we missed a file to add the recent commit e.g. : if we have 3 files called file1 file2 file3, missed file3  
+git rm --cached "filename" -- to unstaged the files from staged file in git
+git commit --amend --author "chinna<chinna@email.com>"  -- to change the recent commit author details
+git reset --hard HEAD~1 -- to remove the recent commit from repo deleted everything include file data
+git reset --soft HEAD~1 -- to remove the recent commit from repo but the files data remains same
+git update-ref -d HEAD  -- to delete the all commits (if we use reset to delete the all commits we have one commit for sure) so instead that this command will delete all.
+git revert "commit id" -- to delete the data in the specific commit data it delete and have a new commit id 
+git branch -- to view the branches
+git branch "id/name" to create a new branch
+git checkout "branch name" to switch branch
+git checkout -b Taduturi -- switch and create a new branch at a time
+git branch -d filename -- to delete a branch
+
+
+
+
+
